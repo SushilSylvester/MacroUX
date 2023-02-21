@@ -5,8 +5,10 @@
     }
 </script>
 <script type="text/javascript" src="index.js"></script>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
+
 <script id="fragmentShader" type="x-shader/x-fragment">
+
   uniform vec2 u_resolution;
   uniform vec2 u_mouse;
   uniform float u_time;
@@ -124,4 +126,7 @@ vec3 blur(sampler2D sp, vec2 uv, vec2 scale) {
   }
 </script>
 
-<div id="container" touch-action="none"></div>
+
+<div id="container" touch-action="none">
+
+</div>
