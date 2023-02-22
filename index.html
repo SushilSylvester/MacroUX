@@ -93,7 +93,7 @@ vec3 blur(sampler2D sp, vec2 uv, vec2 scale) {
     sample += o;
     sample += vec2(sin((u_time+uv.y * .5)*10.)*.001, -.00);
     
-    vec3 fragcolour = vec3(0.1, 0.1, 0.1);
+    vec3 fragcolour = vec3(0.0, 0.0, 0.0);
     vec4 tex;
     if(u_renderpass) {
       tex = vec4(blur(u_buffer, sample, ps*blurStrength) * blurMultiplier, 1.);
