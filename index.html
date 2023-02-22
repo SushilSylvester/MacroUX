@@ -7,7 +7,7 @@
 <script type="text/javascript" src="index.js"></script>
 <link rel="stylesheet" href="style.css">
 <script id="fragmentShader" type="x-shader/x-fragment">
-uniform vec2 u_resolution;
+  uniform vec2 u_resolution;
   uniform vec2 u_mouse;
   uniform float u_time;
   uniform sampler2D u_noise;
@@ -15,7 +15,7 @@ uniform vec2 u_resolution;
   uniform bool u_renderpass;
     
   const float blurMultiplier = 0.95;
-  const float circleSize = .60;
+  const float circleSize = .40;
   const float blurStrength = .98;
   const float threshold = .5;
   const float scale = 4.;
@@ -93,7 +93,7 @@ vec3 blur(sampler2D sp, vec2 uv, vec2 scale) {
     sample += o;
     sample += vec2(sin((u_time+uv.y * .5)*10.)*.001, -.00);
     
-    vec3 fragcolour = vec3(0.97, 0.9, 0.64);
+    vec3 fragcolour = vec3(0.1, 0.1, 0.1);
     vec4 tex;
     if(u_renderpass) {
       tex = vec4(blur(u_buffer, sample, ps*blurStrength) * blurMultiplier, 1.);
@@ -124,7 +124,7 @@ vec3 blur(sampler2D sp, vec2 uv, vec2 scale) {
   }
 </script>
 <div id="container" touch-action="none"></div>
-<div id="text" >
-<H1 id="heading">Your employees are lying to you<br>Reveal the truth to your company.
-</H1>
+<div id="text">
+    <H1 id="heading">Your employees are lying to you<br>Reveal the truth to your company.
+    </H1>
 </div>

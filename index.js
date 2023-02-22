@@ -103,10 +103,6 @@ function animate(delta) {
 }
 
 
-
-
-
-
 let capturer = new CCapture({
     verbose: true,
     framerate: 60,
@@ -175,4 +171,15 @@ function render(delta) {
     if (capturing) {
         capturer.capture(renderer.domElement);
     }
+
+    window.addEventListener('scroll', function() {
+  // Update the u_time uniform based on the scroll position
+  var scrollPosition = window.scrollY;
+  var time = scrollPosition / 1000; // Adjust as needed
+  uniforms.u_time.value = time;
+
+  // Render the updated scene
+  renderer.render(scene, camera);
+});
+
 }
