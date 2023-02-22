@@ -84,7 +84,7 @@ function init() {
     });
 
 
-        renderer.setClearColor(0x5A5A5A); // Set background color to black
+        renderer.setClearColor(0xFBE6A3); // Set background color to black
 
 }
 

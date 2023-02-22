@@ -6,7 +6,6 @@ body {
 #container {
   position: fixed;
   touch-action: none;
-
 }
 
 #text{
@@ -42,8 +41,11 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     font-family: Montserrat, sans-serif;
-    color: #000;
+    font-weight: bold;
+    color: #F8E5A4;
     font-size: 100px;
     line-height: 100px;
     letter-spacing: normal;
+    mix-blend-mode:difference;
 }
+
