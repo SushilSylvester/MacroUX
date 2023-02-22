@@ -34,6 +34,7 @@ loader.load(
 );
 
 function init() {
+
     container = document.getElementById('container');
 
     camera = new THREE.Camera();
@@ -83,6 +84,7 @@ function init() {
     });
 
 
+        renderer.setClearColor(0x5A5A5A); // Set background color to black
 
 }
 

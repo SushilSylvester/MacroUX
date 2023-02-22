@@ -8,3 +8,5 @@ body {
   touch-action: none;
 
 }
+
+renderer.setClearColor(0xffffff); // Set background color to white
