@@ -11,6 +11,9 @@ let container;
 let camera, scene, renderer;
 let uniforms;
 
+let container2;
+let renderer2;
+
 let divisor = 1 / 10;
 
 let newmouse = {
@@ -36,6 +39,7 @@ loader.load(
 function init() {
 
     container = document.getElementById('container');
+    container2 = document.getElementById('container2');//adding a new container
 
     camera = new THREE.Camera();
     camera.position.z = 1;
@@ -69,7 +73,12 @@ function init() {
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
 
+
+    renderer2 = new THREE.WebGLRenderer();
+    renderer2.setPixelRatio(window.devicePixelRatio);
+
     container.appendChild(renderer.domElement);
+    container2.appendChild(renderer2.domElement);
 
     onWindowResize();
     window.addEventListener('resize', onWindowResize, false);
@@ -166,11 +175,10 @@ function render(delta) {
 
     uniforms.u_time.value = delta * 0.0005;
     renderer.render(scene, camera);
+    renderer2.render(scene, camera);
     renderTexture();
 
-    if (capturing) {
-        capturer.capture(renderer.domElement);
-    }
+   
 
 
 
