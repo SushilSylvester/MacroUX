@@ -4,11 +4,25 @@ body {
   background: #000000;
 }
 
-#section{
-  position: relative;
-  touch-action: none;
- color:#fff;
-
+#task{
+      height: 100vh;
+}
+#task1{
+    position: relative;
+    touch-action: none;
+    color:#fff;
+    width: 100%;
+    padding-left: 100px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: normal;
 }
 
 #container {
