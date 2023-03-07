@@ -5,7 +5,9 @@
     <link rel="icon" href="/assets/globe.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
     <script id="vertexShader" type="x-shader/x-vertex">
         void main() {
@@ -23,7 +25,7 @@
   uniform bool u_renderpass;
     
   const float blurMultiplier = 0.95;
-  const float circleSize = .40;
+  const float circleSize = .80;
   const float blurStrength = .98;
   const float threshold = .5;
   const float scale = 4.;
@@ -152,7 +154,8 @@ vec3 blur(sampler2D sp, vec2 uv, vec2 scale) {
         <div id="block2left">
             <img src="assets/block2left.png" width="100%">
         </div>
-        <div id="block2right">Accommodating the needs it has been proven by research that will improve the performance across the board of all employees in a company resulting in better workplace where people would be happy to work.</div>
+        <div id="block2right">Accommodating the needs it has been proven by research that will improve the performance across the board of all employees in a company resulting in better workplace where people would be happy to work.
+        </div>
     </div>
     <div id=block3>
         <div id="block3left">
@@ -161,17 +164,40 @@ vec3 blur(sampler2D sp, vec2 uv, vec2 scale) {
         <div id="block3right"><img src="assets/block3right.png" width="100%">
         </div>
     </div>
-    <div id=task>
-        <H1 id="task1">Task 3
-        </H1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ullamcorper sem eu mauris tempor, sit amet condimentum massa aliquet. Etiam accumsan iaculis sem, ornare sodales arcu pretium in. Cras eget massa a eros congue venenatis. Mauris varius quis tellus nec porta. Nam efficitur mauris lacus, vitae feugiat quam dictum id.
-        </p>
+    <div id=block4>
+        <div id="block4left">
+            <img src="assets/block4left.png" width="100%">
+        </div>
+        <div id="block4right">When you sit down to work you want to be comfortable to be most productive, right?
+            <br><br>
+            Therefore, it makes sense you consider you colleagues/ employees with neurodiversity and make sure you went up and beyond for them just so that they be as productive as possible and optimal.
+        </div>
     </div>
-    <div id=section>
+    <!-- <div id=section>
         <video width="100%" controls muted>
             <source src="assets/table render v2 compressed.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+    </div> -->
+    <div id=block5>
+        <div id="block5left">
+            By working with a diverse team, employees have more of an opportunity to learn - from a range of workplace skills. In one study someone with high inclusiveness was about four times more likely to increase their personal growth compared to someone with low inclusiveness.
+        </div>
+        <div id="block5right">
+            Diversity of all kinds contributes to creativity, innovation, and competitiveness the greater the diversity of your staff, the more unique ideas and perspectives you'll be able to bring to any given problem, and that include neurodiversity
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="assets/logo.png" >
+    </div>
+
+    <div class="block6">
+        <img src="assets/block6banner.png" width="100%">
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Designed by Mansi Chottani, Mila Tawil, Slavi Kaloferov, Sushil Suresh and Xiyuan Han.</p>
     </div>
 </body>
 
