@@ -84,9 +84,11 @@ body {
     mix-blend-mode: difference;
 }
 
+
 #block1 {
     height: 80vh;
 }
+
 
 #block1 p {
     padding-left: 100px;
@@ -99,6 +101,7 @@ body {
     color: #e6e9ea;
     text-align: center;
 }
+
 
 
 .block2 {
